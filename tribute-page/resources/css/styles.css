@@ -1,0 +1,130 @@
+/* BASIC RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* GLOBAL STYLES */
+body {
+  background-color: #fff;
+  color: #444;
+  font-family: "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* CONTAINER START */
+.container {
+  height: auto;
+  padding: 30px 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* MAIN START */
+main {
+  background-color: #d3d3d390;
+  border-radius: 5px;
+  height: auto;
+  margin: 0 auto 2rem;
+  width: 98%;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  padding-top: 3rem;
+}
+
+#img-div {
+  background-color: #fff;
+  height: auto;
+  margin: 1.25rem auto;
+  padding: 10px 10px 20px;
+  width: 98%;
+}
+
+#image {
+  display: block;
+  filter: grayscale(100%);
+  height: auto;
+  margin: 0 auto 0.8rem;
+  max-width: 100%;
+  width: 1024px;
+}
+
+/* SECTION START */
+#tribute-info {
+  word-break: break-word;
+}
+
+.headline {
+  margin: 1.75rem 0 2.5rem;
+}
+
+ul {
+  margin: 0 auto 2.5rem;
+  width: 50%;
+  text-align: left;
+}
+
+li {
+  margin-bottom: 18px;
+}
+
+li:last-of-type {
+  padding-bottom: 0;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+.quote {
+  font-style: italic;
+  height: auto;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+  width: 55%;
+}
+
+h3:last-of-type {
+  padding: 0 1rem 3rem;
+}
+
+#tribute-link:link {
+  color: hsl(210, 90%, 60%);
+  text-decoration: none;
+}
+
+#tribute-link:hover {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#tribute-link:visited {
+  color: hsl(210, 80%, 30%);
+}
+/* SECTION END */
+/* MAIN END */
+/* CONTAINER END */
+
+/* RESPONSIVE DESIGN */
+/* SMARTPHONES */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+
+  #img-div {
+    padding: 5px 5px 20px;
+  }
+
+  ul,
+  .quote {
+    width: 75%;
+  }
+}
+/* Made by Stuart Mosquera */

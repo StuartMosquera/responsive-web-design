@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="./resources/css/styles.css">
+  </head>
+  <body>
+    <!-- CONTAINER START -->
+    <div class="container">
+      <!-- NAV START -->
+      <nav id="navbar">
+        <!-- HEADER START -->
+        <header>
+          <h1>MD Documentation</h1>
+        </header>
+        <!-- HEADER END -->
+        <ul class="nav-ul">
+          <li><a class="nav-link" href="#introduction">Introduction</a></li>
+          <li><a class="nav-link" href="#why_use_markdown?">Why Use Markdown?</a></li>
+          <li><a class="nav-link" href="#headings">Headings</a></li>
+          <li><a class="nav-link" href="#paragraphs">Paragraphs</a></li>
+          <li><a class="nav-link" href="#line_breaks">Line Breaks</a></li>
+          <li><a class="nav-link" href="#emphasis">Emphasis</a></li>
+          <li><a class="nav-link" href="#blockquotes">Blockquotes</a></li>
+          <li><a class="nav-link" href="#lists">Lists</a></li>
+          <li><a class="nav-link" href="#code">Code</a></li>
+          <li><a class="nav-link" href="#horizontal_rules">Horizontal Rules</a></li>
+          <li><a class="nav-link" href="#links">Links</a></li>
+          <li><a class="nav-link" href="#images">Images</a></li>
+          <li><a class="nav-link" href="#escaping_characters">Escaping Characters</a></li>
+          <li><a class="nav-link" href="#html">HTML</a></li>
+          <li><a class="nav-link" href="#reference">Reference</a></li>
+        </ul>
+      </nav>
+      <!-- NAV END -->
+      <!-- MAIN START -->
+      <main id="main-doc">
+        <section id="introduction" class="main-section">
+          <header>
+            <h2>Introduction</h2>
+          </header>
+          <article>
+            <p>Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. Created by John Gruber in 2004, Markdown is now one of the world’s most popular markup languages.</p>
+            <p>Using Markdown is different than using a WYSIWYG editor. In an application like Microsoft Word, you click buttons to format words and phrases, and the changes are visible immediately. Markdown isn’t like that. When you create a Markdown-formatted file, you add Markdown syntax to the text to indicate which words and phrases should look different.</p>
+          </article>
+        </section>
+        <section id="why_use_markdown?" class="main-section">
+          <header>
+            <h2>Why Use Markdown?</h2>
+          </header>
+          <article>
+            <p>You might be wondering why people use Markdown instead of a WYSIWYG editor. Why write with Markdown when you can press buttons in an interface to format your text? As it turns out, there are several reasons why people use Markdown instead of WYSIWYG editors.</p>
+            <ul>
+              <li>Markdown can be used for everything. People use it to create websites, documents, notes, books, presentations, email messages, and technical documentation.</li>
+              <li>Markdown is portable. Files containing Markdown-formatted text can be opened using virtually any application. If you decide you don’t like the Markdown application you’re currently using, you can import your Markdown files into another Markdown application. That’s in stark contrast to word processing applications like Microsoft Word that lock your content into a proprietary file format.</li>
+              <li>Markdown is platform independent. You can create Markdown-formatted text on any device running any operating system.</li>
+              <li>Markdown is future proof. Even if the application you’re using stops working at some point in the future, you’ll still be able to read your Markdown-formatted text using a text editing application. This is an important consideration when it comes to books, university theses, and other milestone documents that need to be preserved indefinitely.</li>
+              <li>Markdown is everywhere. Websites like Reddit and GitHub support Markdown, and lots of desktop and web-based applications support it.</li>
+            </ul>
+          </article>
+        </section>
+        <section id="headings" class="main-section">
+          <header>
+            <h2>Headings</h2>
+          </header>
+          <article>
+            <p>To create a heading, add number signs (#) in front of a word or phrase. The number of number signs you use should correspond to the heading level. For example, to create a heading level three (&lt;h3&gt;), use three number signs (e.g., ### My Header).</p>
+            <pre><code># Heading level 1
+## Heading level 2
+### Heading level 3
+#### Heading level 4
+##### Heading level 5
+###### Heading level 6</code></pre>
+          </article>
+        </section>
+        <section id="paragraphs" class="main-section">
+          <header>
+            <h2>Paragraphs</h2>
+          </header>
+          <article>
+            <p>To create paragraphs, use a blank line to separate one or more lines of text.</p>
+            <pre><code>I really like using Markdown.
+I think I'll use it to format all of my documents from now on.</code></pre>
+          </article>
+        </section>
+        <section id="line_breaks" class="main-section">
+          <header>
+            <h2>Line Breaks</h2>
+          </header>
+          <article>
+            <p>To create a line break or new line (&lt;br&gt;), end a line with two or more spaces, and then type return. </p>
+            <pre><code>This is the first line.
+And this is the second line.</code></pre>
+          </article>
+        </section>
+        <section id="emphasis" class="main-section">
+          <header>
+            <h2>Emphasis</h2>
+          </header>
+          <article>
+            <p>You can add emphasis by making text bold or italic.</p>
+            <h3>Bold</h3>
+            <p>To bold text, add two asterisks or underscores before and after a word or phrase. To bold the middle of a word for emphasis, add two asterisks without spaces around the letters.</p>
+            <pre><code>I just love **bold text**.
+I just love __bold text__.
+Love**is**bold</code></pre>
+            <h3>Italic</h3>
+            <p>To italicize text, add one asterisk or underscore before and after a word or phrase. To italicize the middle of a word for emphasis, add one asterisk without spaces around the letters.</p>
+            <pre><code>Italicized text is the *cat's meow*.
+Italicized text is the _cat's meow_.
+A*cat*meow</code></pre>
+            <h3>Bold and Italic</h3>
+            <p>To emphasize text with bold and italics at the same time, add three asterisks or underscores before and after a word or phrase. To bold and italicize the middle of a word for emphasis, add three asterisks without spaces around the letters.</p>
+            <pre><code>This text is ***really important***.
+This text is ___really important___.
+This text is __*really important*__.
+This text is **_really important_**.
+This is really***very***important text.</code></pre>
+          </article>
+        </section>
+        <section id="blockquotes" class="main-section">
+          <header>
+            <h2>Blockquotes</h2>
+          </header>
+          <article>
+            <p>To create a blockquote, add a &gt; in front of a paragraph.</p>
+            <pre><code>> Dorothy followed her through many of the beautiful rooms in her castle.</code></pre>
+            <h3>Blockquotes with Multiple Paragraphs</h3>
+            <p>Blockquotes can contain multiple paragraphs. Add a &gt; on the blank lines between the paragraphs.</p>
+            <pre><code>> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.</code></pre>
+            <h3>Nested Blockquotes</h3>
+            <p>Blockquotes can be nested. Add a >> in front of the paragraph you want to nest.</p>
+            <pre><code>> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+>> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.</code></pre>
+            <h3>Blockquotes with Other Elements</h3>
+            <p>Blockquotes can contain other Markdown formatted elements. Not all elements can be used — you’ll need to experiment to see which ones work.</p>
+            <pre><code>> #### The quarterly results look great!
+>
+> - Revenue was off the chart.
+> - Profits were higher than ever.
+>
+>  *Everything* is going according to **plan**.</code></pre>
+          </article>
+        </section>
+        <section id="lists" class="main-section">
+          <header>
+            <h2>Lists</h2>
+          </header>
+          <article>
+            <p>You can organize items into ordered and unordered lists.</p>
+            <h3>Ordered Lists</h3>
+            <p>To create an ordered list, add line items with numbers followed by periods. The numbers don’t have to be in numerical order, but the list should start with the number one.</p>
+            <pre><code>1. First item
+2. Second item
+3. Third item
+4. Fourth item</code></pre>
+            <h3>Unordered Lists</h3>
+            <p>To create an unordered list, add dashes (-), asterisks (*), or plus signs (+) in front of line items. Indent one or more items to create a nested list.</p>
+            <pre><code>- First item
+- Second item
+- Third item
+- Fourth item</code></pre>
+            <h3>Starting Unordered List Items With Numbers</h3>
+            <p>If you need to start an unordered list item with a number followed by a period, you can use a backslash (\) to escape the period.</p>
+            <pre><code>- 1968\. A great year!
+- I think 1969 was second best.</code></pre>
+          </article>
+        </section>
+        <section id="code" class="main-section">
+          <header>
+            <h2>Code</h2>
+          </header>
+          <article>
+            <p>To denote a word or phrase as code, enclose it in backticks (`).</p>
+            <pre><code>At the command prompt, type `nano`.</code></pre>
+            <h3>Escaping Backticks</h3>
+            <p>If the word or phrase you want to denote as code includes one or more backticks, you can escape it by enclosing the word or phrase in double backticks (``).</p>
+            <pre><code>``Use `code` in your Markdown file.``</code></pre>
+            <h3>Code Blocks</h3>
+            <p>To create code blocks, indent every line of the block by at least four spaces or one tab.</p>
+            <pre><code>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+&lt;/html&gt;</code></pre>
+          </article>
+        </section>
+        <section id="horizontal_rules" class="main-section">
+          <header>
+            <h2>Horizontal Rules</h2>
+          </header>
+          <article>
+            <p>To create a horizontal rule, use three or more asterisks (***), dashes (---), or underscores (___) on a line by themselves.</p>
+            <pre><code>***
+---
+_________________</code></pre>
+          </article>
+        </section>
+        <section id="links" class="main-section">
+          <header>
+            <h2>Links</h2>
+          </header>
+          <article>
+            <p>To create a link, enclose the link text in brackets (e.g., [Duck Duck Go]) and then follow it immediately with the URL in parentheses (e.g., (https://duckduckgo.com)).</p>
+            <pre><code>My favorite search engine is [Duck Duck Go](https://duckduckgo.com).</code></pre>
+            <h3>Adding Titles</h3>
+            <p>You can optionally add a title for a link. This will appear as a tooltip when the user hovers over the link. To add a title, enclose it in quotation marks after the URL.</p>
+            <pre><code>My favorite search engine is [Duck Duck Go](https://duckduckgo.com "The best search engine for privacy").</code></pre>
+            <h3>URLs and Email Addresses</h3>
+            <p>To quickly turn a URL or email address into a link, enclose it in angle brackets.</p>
+            <pre><code>&lt;https://www.markdownguide.org&gt;
+&lt;fake@example.com&gt;</code></pre>
+            <h3>Formatting Links</h3>
+            <p>To emphasize links, add asterisks before and after the brackets and parentheses. To denote links as code, add backticks in the brackets.</p>
+            <pre><code>I love supporting the **[EFF](https://eff.org)**.
+This is the *[Markdown Guide](https://www.markdownguide.org)*.
+See the section on [`code`](#code).</code></pre>
+          </article>
+        </section>
+        <section id="images" class="main-section">
+          <header>
+            <h2>Images</h2>
+          </header>
+          <article>
+            <p>To add an image, add an exclamation mark (!), followed by alt text in brackets, and the path or URL to the image asset in parentheses. You can optionally add a title in quotation marks after the path or URL.</p>
+            <pre><code>![The San Juan Mountains are beautiful!](/assets/images/san-juan-mountains.jpg "San Juan Mountains")</code></pre>
+            <h3>Linking Images</h3>
+            <p>To add a link to an image, enclose the Markdown for the image in brackets, and then add the link in parentheses.</p>
+            <pre><code>[![An old rock in the desert](/assets/images/shiprock.jpg "Shiprock, New Mexico by Beau Rogers")](https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv)</code></pre>
+          </article>
+        </section>
+        <section id="escaping_characters" class="main-section">
+          <header>
+            <h2>Escaping Characters</h2>
+          </header>
+          <article>
+            <p>To display a literal character that would otherwise be used to format text in a Markdown document, add a backslash (\) in front of the character.</p>
+            <pre><code>\* Without the backslash, this would be a bullet in an unordered list.</code></pre>
+            <p>* Without the backslash, this would be a bullet in an unordered list.</p>
+            <h3>Characters You Can Escape</h3>
+            <p>You can use a backslash to escape the following characters.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Character</th>
+                  <th>Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>\</td>
+                  <td>backslash</td>
+                </tr>
+                <tr>
+                  <td>`</td>
+                  <td>backtick</td>
+                </tr>
+                <tr>
+                  <td>*</td>
+                  <td>asterisk</td>
+                </tr>
+                <tr>
+                  <td>_</td>
+                  <td>underscore</td>
+                </tr>
+                <tr>
+                  <td>{}</td>
+                  <td>curly braces</td>
+                </tr>
+                <tr>
+                  <td>[]</td>
+                  <td>brackets</td>
+                </tr>
+                <tr>
+                  <td>&lt;&gt;</td>
+                  <td>angle brackets</td>
+                </tr>
+                <tr>
+                  <td>()</td>
+                  <td>parentheses</td>
+                </tr>
+                <tr>
+                  <td>#</td>
+                  <td>pound sign</td>
+                </tr>
+                <tr>
+                  <td>+</td>
+                  <td>plus sign</td>
+                </tr>
+                <tr>
+                  <td>-</td>
+                  <td>minus sign</td>
+                </tr>
+                <tr>
+                  <td>.</td>
+                  <td>dot</td>
+                </tr>
+                <tr>
+                  <td>!</td>
+                  <td>exclamation mark</td>
+                </tr>
+                <tr>
+                  <td>|</td>
+                  <td>pipe</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+        <section id="html" class="main-section">
+          <header>
+            <h2>HTML</h2>
+          </header>
+          <article>
+            <p>Many Markdown applications allow you to use HTML tags in Markdown-formatted text. This is helpful if you prefer certain HTML tags to Markdown syntax. For example, some people find it easier to use HTML tags for images. Using HTML is also helpful when you need to change the attributes of an element, like specifying the color of text or changing the width of an image</p>
+            <p>To use HTML, place the tags in the text of your Markdown-formatted file.</p>
+            <pre><code>This **word** is bold. This &lt;em&gt;word&lt;/em&gt; is italic.</code></pre>
+          </article>
+        </section>
+        <section id="reference" class="main-section">
+          <header>
+            <h2>Reference</h2>
+          </header>
+          <article>
+            <ul>
+              <li>All the documentation in this page is taken from <a class="reference" href="https://www.markdownguide.org/basic-syntax/" target="_blank">Markdown Guide</a></li>
+            </ul>
+          </article>
+        </section>
+        <!-- FOOTER START -->
+        <footer>
+          <p>Made by Stuart Mosquera | 2024</p>
+        </footer>
+        <!-- FOOTER END -->
+      </main>
+      <!-- MAIN END -->
+    </div>
+    <!-- CONTAINER END -->
+  </body>
+</html>
+<!-- Made by Stuart Mosquera -->

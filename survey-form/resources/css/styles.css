@@ -1,0 +1,185 @@
+/* BASIC RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* GLOBAL STYLES */
+body {
+  background-attachment: fixed;
+  background-image: linear-gradient(115deg, rgba(60, 60, 160, 0.8), rgba(140, 140, 210, 0.6)), url("../images/people-centered-feat.webp");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  font-family: Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* CONTAINER START */
+.container {
+  padding: 20px;
+  width: 100%;
+}
+
+/* HEADER START */
+header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#description {
+  font-style: italic;
+  font-weight: lighter;
+  margin-top: 0.5rem;
+  text-shadow: 1px 1px 1px #a9a9a9;
+}
+/* HEADER END */
+
+/* MAIN START */
+main {
+  margin-bottom: 1.5rem;
+}
+
+/* FORM START */
+#survey-form {
+  background-color: rgba(30, 30, 50, 0.8);
+  border-radius: 5px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  width: min(60%, 720px);
+}
+
+fieldset {
+  border: none;
+  margin: 18px auto 36px;
+  width: 92%;
+}
+
+legend {
+  margin-bottom: 0.6rem;
+}
+
+label {
+  display: block;
+}
+
+.input-form {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #495057;
+  font-family: inherit;
+  font-size: 0.90em;
+  font-weight: inherit;
+  height: auto;
+  margin: 0.5rem 0 1rem;
+  outline: 0;
+  padding: 0.4rem;
+  width: 100%;
+}
+
+.input-form:last-of-type {
+  margin-bottom: 0;
+}
+
+.border {
+  background-clip: padding-box;
+  transition: border-color 0.2s ease-in, box-shadow 0.2s ease-in;
+}
+
+.border:focus {
+  border-color: #00f;
+  box-shadow: 0 0 0 0.2rem rgba(0, 125, 255, 0.25);
+}
+
+span {
+  font-size: 0.90em;
+  font-weight: lighter;
+}
+
+.input-radio,
+.input-checkbox {
+  margin-bottom: 1rem;
+  margin-right: 0.50rem;
+  min-height: 20px;
+  min-width: 20px;
+  vertical-align: baseline;
+}
+
+#radio-four,
+#checkbox-four {
+  margin-bottom: 0;
+}
+
+#comments {
+  color: #495057;
+  font-family: inherit;
+  font-size: 0.90em;
+  font-weight: inherit;
+  min-height: 120px;
+  padding: 0.4rem;
+  resize: vertical;
+  width: 100%;
+}
+
+#submit {
+  border: none;
+  background-color: #008000;
+  border-radius: 5px;
+  color: inherit;
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  height: auto;
+  margin: 0 auto 20px;
+  padding: 0.8rem 0.6rem;
+  text-align: center;
+  width: 92%;
+}
+
+#submit:hover {
+  cursor: pointer;
+}
+/* FORM END */
+/* MAIN END */
+
+/* FOOTER START */
+footer {
+  text-align: center;
+}
+/* FOOTER END */
+/* CONTAINER END */
+
+/* RESPONSIVE DESIGN */
+/* TABLETS */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  #survey-form {
+    width: 75%
+  }
+}
+
+/* SMARTPHONES */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 20px 0;
+  }
+
+  header,
+  footer {
+    padding: 0 20px;
+  }
+
+  #survey-form {
+    border-radius: 0;
+    width: 100%;
+  }
+}
+/* Made by Stuart Mosquera */
