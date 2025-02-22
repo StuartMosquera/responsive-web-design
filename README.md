@@ -10,7 +10,7 @@ This repository contains my final projects for the Responsive Web Design certifi
 ## Projects
 1. Survey Form.
 2. Tribute Page.
-3. Technical Documenation Page.
+3. Technical Documentation Page.
 4. Product Landing Page.
 5. Personal Portfolio Webpage.
 
