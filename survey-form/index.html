@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./resources/css/styles.css">
+  </head>
+  <body>
+    <!-- CONTAINER START -->
+    <div class="container">
+      <!-- HEADER START -->
+      <header>
+        <h1 id="title">InnovaTech</h1>
+        <h2>Survey Form</h2>
+        <p id="description">Thank you for taking the time to help us improve our services</p>
+      </header>
+      <!-- HEADER END -->
+      <!-- MAIN START -->
+      <main>
+        <!-- FORM START -->
+        <form action="" id="survey-form">
+          <fieldset>
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" class="input-form border" placeholder="Enter your name" required>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" class="input-form border" placeholder="Enter your Email" required>
+            <label for="number" id="number-label">Age <span>(optional)</span></label>
+            <input type="number" id="number" class="input-form border" min="10" max="120" placeholder="Age">
+          </fieldset>
+          <fieldset>
+            <legend>Which option best describes your current role?</legend>
+            <label for="dropdown">
+              <select id="dropdown" class="input-form">
+                <option value="" selected disabled>(select an option)</option>
+                <option value="student">Student</option>
+                <option value="full-time-job">Full Time Job</option>
+                <option value="freelancer">Freelancer</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Would you recommend InnovaTech to a friend?</legend>
+            <label for="radio-one"><input type="radio" id="radio-one" class="input-radio" name="option" value="yes" checked>Yes</label>
+            <label for="radio-two"><input type="radio" id="radio-two" class="input-radio" name="option" value="no">No</label>
+            <label for="radio-three"><input type="radio" id="radio-three" class="input-radio" name="option" value="maybe">Maybe</label>
+            <label for="radio-four"><input type="radio" id="radio-four" class="input-radio" name="option" value="not-sure">Not sure</label>
+          </fieldset>
+          <fieldset>
+            <legend>What service did you like the most? <span>(check all that apply)</span></legend>
+            <label for="checkbox-one"><input type="checkbox" id="checkbox-one" class="input-checkbox" value="identity-design">Identity Design</label>
+            <label for="checkbox-two"><input type="checkbox" id="checkbox-two" class="input-checkbox" value="social-media-design">Social Media Design</label>
+            <label for="checkbox-three"><input type="checkbox" id="checkbox-three" class="input-checkbox" value="logo-design">Logo Design</label>
+            <label for="checkbox-four"><input type="checkbox" id="checkbox-four" class="input-checkbox" value="website-development">Website Development</label>
+          </fieldset>
+          <fieldset>
+            <legend>Any comments or suggestions?</legend>
+            <label for="comments"><textarea id="comments" placeholder="Enter your comments here..."></textarea></label>
+          </fieldset>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+        <!-- FORM END -->
+      </main>
+      <!-- MAIN END -->
+      <!-- FOOTER START -->
+      <footer>
+        <p>Made by Stuart Mosquera | 2024</p>
+      </footer>
+      <!-- FOOTER END -->
+    </div>
+    <!-- CONTAINER END -->
+  </body>
+</html>
+<!-- Made by Stuart Mosquera -->
