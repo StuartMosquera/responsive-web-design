@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <header id="header">
+        <div class="img-div">
+          <img id="header-img" src="images/codeschool-logo.png" alt="codeschool logo">
+        </div>
+
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#features-section">Features</a></li>
+            <li><a class="nav-link" href="#video-section">How It Works</a></li>
+            <li><a class="nav-link" href="#pricing-section">Pricing</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+          <h2>Crafted with Code, Built by Hands</h2>
+          <label for="email">
+            <input type="email" id="email" class="form-control" name="email" placeholder="Enter your email address" required>
+          </label>
+          <input type="submit" id="submit" value="GET STARTED">
+        </form>
+
+        <section id="features-section">
+          <div class="feature-div">
+            <div class="img-div">
+              <img src="images/book-solid.svg" width="60" alt="">
+            </div>
+            <article>
+              <h2>Premium Learning Resources</h2>
+              <p>Our coding programs utilize the latest industry-standard materials, designed to enhance your learning experience and ensure your skills stay relevant.</p>
+            </article>
+          </div>
+
+          <div class="feature-div">
+            <div class="img-div">
+              <img src="images/bolt-solid.svg" width="60" alt="">
+            </div>
+            <article>
+              <h2>Quick Enrollment</h2>
+              <p>We make it easy for you to start your coding journey. Once you sign up, you'll gain immediate access to your courses and resources.</p>
+            </article>
+          </div>
+
+          <div class="feature-div">
+            <div class="img-div">
+              <img src="images/check-solid.svg" width="60" alt="">
+            </div>
+            <article>
+              <h2>Quality Assurance</h2>
+              <p>We are committed to your success. Every course comes with a satisfaction guarantee, and our instructors are always available to provide support and feedback to ensure you reach your goals.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="video-section">
+          <iframe id="video" src="https://www.youtube.com/embed/_QmyeFfiZaU?rel=0&controls=0&showinfo=0" height="320" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section id="pricing-section">
+          <article>
+            <h3>Front-End Developer</h3>
+            <p><strong>$100</strong></p>
+            <ul>
+              <li>HTML &amp; CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+            </ul>
+            <button>SELECT</button>
+          </article>
+
+          <article>
+            <h3>Back-End Developer</h3>
+            <p><strong>$200</strong></p>
+            <ul>
+              <li>JavaScript</li>
+              <li>SQL</li>
+              <li>Node.js &amp; MongoDB</li>
+            </ul>
+            <button>SELECT</button>
+          </article>
+
+          <article>
+            <h3>Full-Stack Developer</h3>
+            <p><strong>$250</strong></p>
+            <ul>
+              <li>Front-End Developer Career</li>
+              <li>Back-End Developer Career</li>
+              <li style="visibility: hidden;">(insert data)</li>
+            </ul>
+            <button>SELECT</button>
+          </article>
+        </section>
+      </main>
+
+      <footer>
+        <ul>
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Contact</li>
+        </ul>
+        <p>Copyright 2024, CodeSchool</p>
+        <p>Made by Stuart Mosquera</p>
+      </footer>
+    </div>
+  </body>
+</html>

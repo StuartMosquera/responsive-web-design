@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <nav id="navbar">
+        <header>
+          <h1>MD Documentation</h1>
+        </header>
+
+        <ul class="nav-ul">
+          <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+          <li><a class="nav-link" href="#Paragraphs">Paragraphs</a></li>
+          <li><a class="nav-link" href="#Headers">Headers</a></li>
+          <li><a class="nav-link" href="#Blockquotes">Blockquotes</a></li>
+          <li><a class="nav-link" href="#Phrase_Emphasis">Phrase Emphasis</a></li>
+          <li><a class="nav-link" href="#Lists">Lists</a></li>
+          <li><a class="nav-link" href="#Links">Links</a></li>
+          <li><a class="nav-link" href="#Images">Images</a></li>
+          <li><a class="nav-link" href="#Code">Code</a></li>
+          <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+      </nav>
+
+      <main id="main-doc">
+        <section id="Introduction" class="main-section">
+          <header>
+            <h2>Introduction</h2>
+          </header>
+          <div class="content-div">
+            <p>Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).</p>
+            <p>Thus, "Markdown" is two things: </p>
+            <ol>
+              <li>A plain text formatting syntax</li>
+              <li>and a software tool, written in Perl, that converts the plain text formatting to HTML</li>
+            </ol>
+          </div>
+        </section>
+
+        <section id="Paragraphs" class="main-section">
+          <header>
+            <h2>Paragraphs</h2>
+          </header>
+          <div class="content-div">
+            <p>A paragraph is simply one or more consecutive lines of text, separated by one or more blank lines. (A blank line is any line that looks like a blank line — a line containing nothing but spaces or tabs is considered blank.) Normal paragraphs should not be indented with spaces or tabs.</p>
+            <pre><code>Now is the time for all good men to come to the aid of their country. This is just a regular paragraph.
+
+The quick brown fox jumped over the lazy dog's back.</code></pre> 
+          </div>
+        </section>
+
+        <section id="Headers" class="main-section">
+          <header>
+            <h2>Headers</h2>
+          </header>
+          <div class="content-div">
+            <p>Markdown offers two styles of headers:</p>
+            <p><em>Setext</em> and <em>atx</em>.</p>
+            <ul>
+              <li>Setext-style headers for <code class="inline-code">&lt;h1&gt;</code> and <code class="inline-code">&lt;h2&gt;</code> are created by "underlining" with equal signs (<code class="inline-code">=</code>) and hyphens (<code class="inline-code">-</code>), respectively.</li>
+              <li>To create an atx-style header, you put 1-6 hash marks (<code class="inline-code">#</code>) at the beginning of the line — the number of hashes equals the resulting HTML header level.</li>
+            </ul>
+            <pre><code>A First Level Header
+====================
+
+A Second Level Header
+---------------------
+
+### Header 3</code></pre> 
+          </div>
+        </section>
+
+        <section id="Blockquotes" class="main-section">
+          <header>
+            <h2>Blockquotes</h2>
+          </header>
+          <div class="content-div">
+            <p>Blockquotes are indicated using email-style '<code class="inline-code">&gt;</code>' angle brackets.</p>
+            <pre><code>> This is a blockquote.
+>
+> This is the second paragraph in the blockquote.
+>
+> ## This is an H2 in a blockquote</code></pre>
+          </div>
+        </section>
+
+        <section id="Phrase_Emphasis" class="main-section">
+          <header>
+            <h2>Phrase Emphasis</h2>
+          </header>
+          <div class="content-div">
+            <p>Markdown uses asterisks and underscores to indicate spans of emphasis.</p>
+            <pre><code>Some of these words *are emphasized*.
+Some of these words _are emphasized also_.
+
+Use two asterisks for **strong emphasis**.
+Or, if you prefer, __use two underscores instead__.</code></pre>
+          </div>
+        </section>
+
+        <section id="Lists" class="main-section">
+          <header>
+            <h2>Lists</h2>
+          </header>
+          <div class="content-div">
+            <p>Unordered (bulleted) lists use asterisks, pluses, and hyphens (<code class="inline-code">*</code>, <code class="inline-code">+</code>, and <code class="inline-code">-</code>) as list markers. These three markers are interchangable;</p>
+            <pre><code>* Candy.
+* Gum.
+* Booze.
+
++ Candy.
++ Gum.
++ Booze. 
+
+- Candy.
+- Gum.
+- Booze.</code></pre>
+            <p>Ordered (numbered) lists use regular numbers, followed by periods, as list markers:</p>
+            <pre><code>1. Red
+2. Green
+3. Blue</code></pre>
+            <p>If you put blank lines between items, you'll get <code class="inline-code">&lt;p&gt;</code> tags for the list item text. You can create multi-paragraph list items by indenting the paragraphs by 4 spaces or 1 tab:</p>
+            <pre><code>* A list item.
+
+  With multiple paragraphs.
+
+* Another item in the list.</code></pre>
+          </div>
+        </section>
+
+        <section id="Links" class="main-section">
+          <header>
+            <h2>Links</h2>
+          </header>
+          <div class="content-div">
+            <p>Markdown supports two styles for creating links: <em>inline</em> and <em>reference</em>. With both styles, you use square brackets to delimit the text you want to turn into a link.</p>
+            <p>Inline-style links use parentheses immediately after the link text. For example:</p>
+            <pre><code>This is an [example link](http://example.com/).</code></pre>
+            <p>Optionally, you may include a title attribute in the parentheses:</p>
+            <pre><code>This is an [example link](http://example.com/ "With a Title").</code></pre>
+            <p>Reference-style links allow you to refer to your links by names, which you define elsewhere in your document:</p>
+            <pre><code>I get 10 times more traffic from [Google][1] than from
+[Yahoo][2] or [MSN][3].
+
+[1]: http://google.com/        "Google"
+[2]: http://search.yahoo.com/  "Yahoo Search"
+[3]: http://search.msn.com/    "MSN Search"</code></pre>
+            <p>The title attribute is optional. Link names may contain letters, numbers and spaces, but are <em>not</em> case sensitive:</p>
+            <pre><code>I start my morning with a cup of coffee and
+[The New York Times][NY Times].
+
+[ny times]: http://www.nytimes.com/</code></pre>
+          </div>
+        </section>
+
+        <section id="Images" class="main-section">
+          <header>
+            <h2>Images</h2>
+          </header>
+          <div class="content-div">
+            <p>Image syntax is very much like link syntax.</p>
+            <p>Inline (titles are optional):</p>
+            <pre><code>![alt text](/path/to/img.jpg "Title")</code></pre>
+            <p>Reference-style:</p>
+            <pre><code>![alt text][id]
+
+[id]: /path/to/img.jpg "Title"</code></pre>
+          </div>
+        </section>
+
+        <section id="Code" class="main-section">
+          <header>
+            <h2>Code</h2>
+          </header>
+          <div class="content-div">
+            <p>In a regular paragraph, you can create code span by wrapping text in backtick quotes. Any ampersands (<code class="inline-code">&amp;</code>) and angle brackets (<code class="inline-code">&lt;</code> or <code class="inline-code">&gt;</code>) will automatically be translated into HTML entities. This makes it easy to use Markdown to write about HTML example code:</p>
+            <pre><code>I strongly recommend against using any `&lt;blink&gt;` tags.
+
+I wish SmartyPants used named entities like `&amp;mdash;`
+instead of decimal-encoded entities like `&amp;#8212;`.</code></pre>
+            <p>To specify an entire block of pre-formatted code, indent every line of the block by 4 spaces or 1 tab. Just like with code spans, &amp;, &lt;, and &gt; characters will be escaped automatically.</p>
+            <pre><code>If you want your page to validate under XHTML 1.0 Strict,
+you've got to put paragraph tags in your blockquotes:
+    
+        &lt;blockquote&gt;
+          &lt;p&gt;For example.&lt;/p&gt;
+        &lt;/blockquote&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="Reference" class="main-section">
+          <header>
+            <h2>Reference</h2>
+          </header>
+          <div class="content-div">
+            <ul>
+              <li>All the documentation in this page is taken from <a href="https://daringfireball.net/projects/markdown/" target="_blank">Daring Firewall</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <footer>
+          <p>Made by Stuart Mosquera | 2024</p>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
